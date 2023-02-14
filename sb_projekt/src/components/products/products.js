@@ -1,7 +1,7 @@
 const Products = () => {
     return (
         <>
-            <div className={`container w-75 bg-warning`}>
+            <div className={`w-75 bg-warning mx-auto`}>
                 Content2
             </div>
         </>
