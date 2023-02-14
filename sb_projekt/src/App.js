@@ -1,11 +1,10 @@
-import './components/navigation';
-import Homepage from "./components/navigation";
+import './components/navigation/navigation';
+import Navigation from "./components/navigation/navigation";
 
 function App() {
   return (
     <>
-      <Homepage/>
-        
+        <Navigation/>
     </>
   );
 }
