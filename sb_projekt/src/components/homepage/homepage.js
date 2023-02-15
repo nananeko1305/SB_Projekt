@@ -1,9 +1,11 @@
+import styles from './homepage.module.css'
 const HomePage = () => {
     return (
         <>
-            <div className={`container w-75 bg-primary`}>
-                Homepage
-
+            <div className={`w-75 bg-primary mx-auto ${styles.body}`}>
+                <p>
+                    Homepage
+                </p>
             </div>
         </>
     );

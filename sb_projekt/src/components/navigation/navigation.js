@@ -1,11 +1,13 @@
-import React from "react";
+import styles from "./navigation.module.css"
 import logo from "/home/nananeko1305/Documents/Projects/SB_Projekt/sb_projekt/src/images/logo.png";
 import phone from "/home/nananeko1305/Documents/Projects/SB_Projekt/sb_projekt/src/images/phone.png";
 import house from "/home/nananeko1305/Documents/Projects/SB_Projekt/sb_projekt/src/images/house.png";
 
 import {Link, Outlet} from "react-router-dom";
 
+
 const Navigation = () => {
+
     return (
         <>
             <Header/>
@@ -18,17 +20,25 @@ const Navigation = () => {
 const NavigationBar = () => {
     return (
         <>
-            <nav className={`navbar navbar-expand`}>
-                <div className={`container-fluid mt-3 p-2 w-75 justify-content-center bg-light`}>
-                    <ul className={`navbar-nav `}>
-                        <li className={`nav-item border-end justify-content-between`}>
+            <nav className={`navbar navbar-expand mt-3 pt-0 mx-auto sticky-top ${styles.body}`}>
+                <div className={`d-flex container-fluid w-75 justify-content-center align-items-center bg-light`}>
+                    <ul className={`navbar-nav`}>
+                        <li className={`nav-item border-end`}>
                             <Link className={`nav-link`} to="/">NASLOVNA</Link>
                         </li>
                         <li className={`nav-item border-end`}>
                             <Link className={`nav-link`} to="/about">O NAMA</Link>
                         </li>
-                        <li className={`nav-item`}>
-                            <Link className={`nav-link`} to={`/products`}>PROIZVODI</Link>
+                        <li className={`nav-item dropdown`}>
+                            <Link className="nav-link dropdown-toggle" to={`/products`} data-bs-toggle="dropdown">PROIZVODI</Link>
+                            <ul className={`dropdown-menu`}>
+                                <li>
+                                    <Link className={`dropdown-item`} to={``}>Automatske masine</Link>
+                                </li>
+                                <li>
+                                    <Link className={`dropdown-item`} to={``}>Polu-automatske masine</Link>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -72,5 +82,7 @@ const Header = () => {
         </>
     );
 }
+
+
 
 export default Navigation;
