@@ -1,0 +1,13 @@
+.body {
+    font-family: "Rasa", serif;
+    vertical-align: center;
+    font-size: large;
+}
+
+li {
+    transition: background-color 0.4s ease-in-out;
+}
+
+li:hover {
+    background-color: #989898;
+}
