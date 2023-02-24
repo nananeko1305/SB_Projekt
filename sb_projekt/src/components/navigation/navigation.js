@@ -2,8 +2,8 @@ import styles from "./navigation.module.css"
 import logo from "/home/nananeko1305/Documents/Projects/SB_Projekt/sb_projekt/src/images/logo.png";
 import phone from "/home/nananeko1305/Documents/Projects/SB_Projekt/sb_projekt/src/images/phone.png";
 import house from "/home/nananeko1305/Documents/Projects/SB_Projekt/sb_projekt/src/images/house.png";
-
 import {Link, Outlet} from "react-router-dom";
+import React from "react";
 
 
 const Navigation = () => {
@@ -82,7 +82,5 @@ const Header = () => {
         </>
     );
 }
-
-
 
 export default Navigation;
